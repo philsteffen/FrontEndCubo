@@ -1,0 +1,362 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-ExtraBoldItalic;
+    src: url(../fonts/OpenSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-LightItalic;
+    src: url(../fonts/OpenSans-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Semibold;
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-SemiboldItalic;
+    src: url(../fonts/OpenSans-SemiboldItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-BoldItalic;
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+body {
+    margin: 0;
+    color: #898989;
+    font-family: OpenSans-Regular;
+}
+
+header {
+    background-color: #eee;
+    font-size: 16px;
+}
+
+    header nav {
+        display: inline-block;
+        font-family: OpenSans-Semibold;
+        width: 75%;
+    }
+
+        header nav ul {
+            list-style: none;
+            display: inline-block;
+        }
+
+            header nav ul li {
+                display: inline-block;
+                border-left: 1px solid #898989;
+                padding: 3px 10px;
+            }
+
+                header nav ul li:first-child {
+                    border-left: inherit;
+                }
+
+    header button {
+        background-color: #f7941e;
+        border: none;
+        font-weight: bold;
+        border-radius: 2px;
+        color: #fff;
+        width: 100px;
+        height: 25px;
+    }
+
+footer {
+    background-color: #eee;
+    min-height: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+
+#logo {
+    display: inline-block;
+    background-image: url(../img/logo.png);
+    width: 118px;
+    height: 102px;
+    border-radius: 2px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.20);
+    float: left;
+}
+
+#subMenu {
+    border: 1px solid #898989;
+    border-radius: 2px;
+    padding: 16px;
+    width: 200px;
+    float: left;
+    font-size: 14px;
+}
+
+    #subMenu ul {
+        margin: 10px 0;
+        padding-left: 20px;
+        list-style: url(../img/bullet.png);
+        color: #20b7ce;
+        font-weight: bold;
+    }
+
+        #subMenu ul li {
+            padding-top: 10px;
+        }
+
+            #subMenu ul li ul {
+                padding-left: 0px;
+            }
+
+            #subMenu ul li li {
+                list-style: none;
+                color: #898989;
+                padding-top: 0px;
+            }
+
+#main {
+    float: left;
+    width: 700px;
+    margin-left: 10px;
+}
+
+#textoMiolo {
+    width: 450px;
+    margin-right: 22px;
+}
+
+#textoMiolo, #bannerSmall, #bannerlarge {
+    float: left;
+}
+
+    #textoMiolo .tituloPrincipal, #bannerSmall .tituloPrincipal {
+        font-size: 20px;
+        color: #ec007a;
+        padding-bottom: 20px;
+    }
+
+    #bannerSmall img {
+        border-radius: 5px;
+    }
+
+#bannerlarge {
+    margin-bottom: 40px;
+}
+
+.tituloPrincipal {
+    font-size: 16px;
+    color: #f7941e;
+    padding: 10px 0px;
+    border-bottom: 1px solid #898989;
+}
+
+#bannerlarge .tituloPrincipal {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    padding-left: 20px;
+    font-family: OpenSans-Semibold;
+}
+
+#menu1 .tituloPrincipal, #menuLogos .tituloPrincipal {
+    color: #898989;
+    font-size: 20px;
+    border-bottom: none;
+}
+
+#mainheight {
+    min-height: 1200px;
+}
+
+#menu1 {
+    width: 60%;
+    display: inline-block;
+}
+
+    #menu1 .block {
+        width: 50%;
+        float: left;
+    }
+
+        #menu1 .block .subTitulo {
+            display: block;
+            float: left;
+            width: 100%;
+            font-weight: bold;
+        }
+
+    #menu1 ul {
+        list-style: none;
+        padding: 0px;
+        width: 50%;
+        float: left;
+        font-size: 13px;
+        min-height: 150px;
+    }
+
+        #menu1 ul li {
+            padding: 0px;
+        }
+
+#menuLogos {
+    width: 30%;
+    display: inline-block;
+}
+
+    #menuLogos span {
+        display: inline-block;
+        width: 40%;
+        height: 55px;
+        float: left;
+        padding: 10px;
+    }
+
+.mainBody {
+    width: 950px;
+    margin: 0 auto;
+}
+
+#menuInstitucional {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #898989;
+}
+
+    #menuInstitucional nav {
+        display: inline-block;
+        font-family: OpenSans-Regular;
+        font-size: 13px;
+    }
+
+        #menuInstitucional nav ul {
+            padding: 0px;
+            list-style: none;
+            display: inline-block;
+        }
+
+            #menuInstitucional nav ul li {
+                display: inline-block;
+                border-left: 1px solid #898989;
+                padding: 3px 10px;
+            }
+
+                #menuInstitucional nav ul li:first-child {
+                    border-left: inherit;
+                    padding-left: 0px;
+                }
+
+#copyright {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.20);
+    color: #898989;
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    min-height: 100px;
+}
+
+    #copyright p {
+        display: inline-block;
+    }
+
+.breadCrumb {
+    padding: 16px 0px 16px 0px;
+    font-size: 12px;
+    padding-left: 170px;
+}
+
+.caixa {
+    float: right;
+    width: 211px;
+    height: 140px;
+    padding: 20px 5px 20px 5px;
+    border: 1px solid #f7941e;
+    margin: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.esquerda {
+    float: left;
+}
+
+.direita {
+    float: right;
+}
+
+
+@media only screen and (min-width : 400px) and (max-width : 900px) {
+    .mainBody, #main {
+        width: 100%;
+        float: inherit;
+        margin: inherit;
+    }
+
+    header {
+        font-size: 12px;
+    }
+
+        header button {
+            display: none;
+        }
+
+    #bannerlarge .tituloPrincipal {
+        display: none;
+    }
+
+    #carrousel img, #bannerlarge img, #bannerSmall img {
+        width: 100%;
+    }
+
+    #bannerSmall, #bannerlarge, #textoMiolo, #subMenu {
+        float: inherit;
+        width: 90%;
+    }
+
+    .caixa {
+        width: 85%;
+        float: inherit;
+    }
+}
